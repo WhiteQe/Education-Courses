@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About LearnHub</title>
+    <link rel="stylesheet" href="about.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="header">
+        <nav class="nav-container">
+            <a href="home.html" class="logo-container">
+                <img src="public/component1i201-difi.svg" alt="LearnHub Logo" class="logo-icon">
+                <span class="logo-text">LearnHub</span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="nav-links">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Desktop Authentication Links & Profile -->
+            <div class="nav-auth">
+                <!-- Show these when the user is logged out -->
+                <div class="logged-out-view">
+                    <a href="login.html" class="btn btn-secondary btn-small">Login</a>
+                    <a href="registration.html" class="btn btn-primary btn-small">Sign Up</a>
+                </div>
+                <!-- Show this when the user is logged in -->
+                <a href="profile.html" class="profile-icon-link logged-in-view">
+                    <img src="public/profile-icon.png" alt="Profile" class="profile-icon">
+                </a>
+            </div>
+
+            <!-- Burger Menu Button (for mobile) -->
+            <button class="burger-menu" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+     </header>
+
+     <!-- Mobile Navigation Panel (hidden by default) -->
+      <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <a href="home.html" class="logo-container">
+                <img src="public/component1i201-difi.svg" alt="LearnHub Logo" class="logo-icon">
+                <span class="logo-text">LearnHub</span>
+            </a>
+            <button class="close-btn" aria-label="Close Navigation">&times;</button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="home.html" class="mobile-nav-link">Home</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="courses.html" class="mobile-nav-link">Courses</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+            <div class="nav-divider"></div>
+            <h4 class="categories-title">CATEGORIES</h4>
+            <a href="#" class="mobile-nav-link">Web Development</a>
+            <a href="#" class="mobile-nav-link">Data Science</a>
+            <a href="#" class="mobile-nav-link">Design</a>
+            <a href="#" class="mobile-nav-link">Mobile Development</a>
+            <a href="#" class="mobile-nav-link">Cloud Computing</a>
+        </div>
+      </div>
+
+      <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-content">
+            <h1>About LearnHub</h1>
+            <p>
+              We're on a mission to transform lives through education. Since 2018, we've helped
+              <br />
+              over 50,000 students worldwide master new skills and advance their careers.
+            </p>
+          </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="story-section">
+          <div class="story-content">
+            <h2>Our Story</h2>
+            <p>
+              LearnHub began with a simple idea: quality education should be accessible to anyone with the determination to learn. Founded by a team of educators and technologists, we set out to create an online learning platform that combines expert instruction with cutting-edge technology.
+            </p>
+            <p>
+              What started as a small collection of web development courses has grown into a comprehensive learning platform covering everything from data science to design, mobile development to cloud computing. Our growth has been driven by one principle: putting students first.
+            </p>
+            <p>
+              Today, LearnHub serves a global community of learners, from career changers and aspiring developers to seasoned professionals looking to upskill. We're proud to have helped thousands of students achieve their goals and transform their careers.
+            </p>
+          </div>
+          <div class="story-image-container">
+            <img src="public/tq_vvjkdbxtsr-q3r5-1500h.png" alt="Students collaborating in a classroom" />
+            <div class="story-image-overlay">
+              <span class="overlay-number">50,000+</span>
+              <span class="overlay-text">Students Worldwide</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Our Values Section -->
+        <section class="values-section">
+            <div class="section-header">
+                <h2>Our Values</h2>
+                <p>These core values guide everything we do and shape the learning experience we create</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <img src="public/component12028-sdv.svg" alt="Mission-Driven Icon">
+                    </div>
+                    <h3>Mission-Driven</h3>
+                    <p>We believe education should be accessible to everyone, everywhere. Our mission is to democratize learning and empower individuals to achieve their full potential.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <img src="public/component12028-d45v.svg" alt="Student-Centered Icon">
+                    </div>
+                    <h3>Student-Centered</h3>
+                    <p>Every decision we make prioritizes student success. From course design to support services, we focus on creating the best learning experience possible.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <img src="public/component12028-lcxn.svg" alt="Quality First Icon">
+                    </div>
+                    <h3>Quality First</h3>
+                    <p>We partner with industry-leading experts and invest heavily in course quality. Every course is carefully crafted to deliver real-world, applicable skills.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <img src="public/component12028-fvpm.svg" alt="Continuous Innovation Icon">
+                    </div>
+                    <h3>Continuous Innovation</h3>
+                    <p>The world of technology evolves rapidly, and so do we. We continuously update our curriculum to reflect the latest industry trends and best practices.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section class="journey-section">
+            <div class="section-header">
+                <h2>Our Journey</h2>
+                <p>From humble beginnings to a global learning platform</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-milestone"><span class="year">18</span></div>
+                    <div class="timeline-content">
+                        <h3>The Beginning</h3>
+                        <p>LearnHub was founded with a vision to make quality education accessible to all.</p>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-milestone"><span class="year">19</span></div>
+                    <div class="timeline-content">
+                        <h3>First 1,000 Students</h3>
+                        <p>Reached our first milestone of 1,000 enrolled students across 10 courses.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-milestone"><span class="year">20</span></div>
+                    <div class="timeline-content">
+                        <h3>Global Expansion</h3>
+                        <p>Expanded our reach to 50+ countries with multi-language support.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-milestone"><span class="year">21</span></div>
+                    <div class="timeline-content">
+                        <h3>Platform Upgrade</h3>
+                        <p>Launched our redesigned platform with enhanced features and mobile apps.</p>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-milestone"><span class="year">22</span></div>
+                    <div class="timeline-content">
+                        <h3>25,000 Students</h3>
+                        <p>Celebrated 25,000 students and introduced corporate training programs.</p>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-milestone"><span class="year">23</span></div>
+                    <div class="timeline-content">
+                        <h3>Industry Recognition</h3>
+                        <p>Received multiple awards for excellence in online education.</p>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-milestone"><span class="year">24</span></div>
+                    <div class="timeline-content">
+                        <h3>Today</h3>
+                        <p>Serving 50,000+ students with 200+ courses taught by world-class instructors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructors Section -->
+        <section class="instructors-section">
+            <div class="section-header">
+                <h2>Meet Our Instructors</h2>
+                <p>Learn from industry experts with real-world experience</p>
+            </div>
+            <div class="instructors-grid">
+                <div class="instructor-card">
+                    <img src="public/tq_k_yzuttem8-1gzp-200h.png" alt="Dr. Sarah Chen" class="instructor-photo">
+                    <h3>Dr. Sarah Chen</h3>
+                    <p class="instructor-title">Professor of Computer Science</p>
+                    <p class="instructor-bio">With over 15 years of experience in software engineering and education, Dr. Chen has helped thousands of students launch their tech careers.</p>
+                    <div class="instructor-tags">
+                        <span>Web Development</span>
+                        <span>Data Structures</span>
+                        <span>Algorithms</span>
+                    </div>
+                </div>
+                 <div class="instructor-card">
+                    <img src="public/tq_xsyyamiysx-2ymc-200h.png" alt="Michael Rodriguez" class="instructor-photo">
+                    <h3>Michael Rodriguez</h3>
+                    <p class="instructor-title">UX Design Lead</p>
+                    <p class="instructor-bio">Former lead designer at top tech companies, Michael brings real-world experience to his courses on user experience and interface design.</p>
+                    <div class="instructor-tags">
+                        <span>UI/UX Design</span>
+                        <span>Product Design</span>
+                        <span>Design Systems</span>
+                    </div>
+                </div>
+                 <div class="instructor-card">
+                    <img src="public/tq_ifulnyjxsr-c9o729-200h.png" alt="Dr. Emily Watson" class="instructor-photo">
+                    <h3>Dr. Emily Watson</h3>
+                    <p class="instructor-title">Data Science Director</p>
+                    <p class="instructor-bio">Emily has published over 50 research papers and leads data science teams at Fortune 500 companies.</p>
+                    <div class="instructor-tags">
+                        <span>Machine Learning</span>
+                        <span>Data Analysis</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+                 <div class="instructor-card">
+                    <img src="public/tq_ho7eff4pv9-6ls-200h.png" alt="James Park" class="instructor-photo">
+                    <h3>James Park</h3>
+                    <p class="instructor-title">Mobile Development Expert</p>
+                    <p class="instructor-bio">James has shipped over 30 mobile apps with millions of downloads and teaches the latest in mobile development.</p>
+                    <div class="instructor-tags">
+                        <span>iOS Development</span>
+                        <span>Android</span>
+                        <span>React Native</span>
+                    </div>
+                </div>
+                <div class="instructor-card large-card">
+                    <img src="public/tq_993sjum-0v-1yi-1500h.png" alt="Lisa Anderson" class="instructor-photo">
+                    <h3>Lisa Anderson</h3>
+                    <p class="instructor-title">Cloud Architecture Specialist</p>
+                    <p class="instructor-bio">AWS certified architect with expertise in building scalable cloud infrastructure for enterprise applications.</p>
+                    <div class="instructor-tags">
+                        <span>Cloud Computing</span>
+                        <span>DevOps</span>
+                        <span>AWS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+          <h2>Join Our Learning Community</h2>
+          <p>Start your learning journey today and be part of our global community of achievers.</p>
+          <button class="btn btn-light">
+            Explore Our Courses
+            <img src="public/component1i202-id1.svg" alt="Arrow Icon" />
+          </button>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <div class="logo-container">
+              <img src="public/component1i202-kten.svg" alt="LearnHub Logo" class="logo-icon" />
+              <span class="logo-text light-text">LearnHub</span>
+            </div>
+            <p>
+              Empowering learners worldwide with high-quality, accessible online education. Learn at your own pace, from anywhere.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Browse Courses</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Data Science</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Mobile Development</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <ul>
+              <li>123 Education St, San Francisco, CA 94102</li>
+              <li>+1 (555) 555-1234</li>
+              <li>support@learnhub.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 LearnHub. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script src="data.js"></script>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

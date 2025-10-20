@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>LearnHub - Online Learning Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <!-- Header -->
+      <header class="header">
+        <nav class="nav-container">
+            <a href="home.html" class="logo-container">
+                <img src="public/component1i201-difi.svg" alt="LearnHub Logo" class="logo-icon">
+                <span class="logo-text">LearnHub</span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="nav-links">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Desktop Authentication Links & Profile -->
+            <div class="nav-auth">
+                <!-- Show these when the user is logged out -->
+                <div class="logged-out-view">
+                    <a href="login.html" class="btn btn-secondary btn-small">Login</a>
+                    <a href="registration.html" class="btn btn-primary btn-small">Sign Up</a>
+                </div>
+                <!-- Show this when the user is logged in -->
+                <a href="profile.html" class="profile-icon-link logged-in-view">
+                    <img src="public/profile-icon.png" alt="Profile" class="profile-icon">
+                </a>
+            </div>
+
+            <!-- Burger Menu Button (for mobile) -->
+            <button class="burger-menu" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+     </header>
+
+     <!-- Mobile Navigation Panel (hidden by default) -->
+      <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <a href="home.html" class="logo-container">
+                <img src="public/component1i201-difi.svg" alt="LearnHub Logo" class="logo-icon">
+                <span class="logo-text">LearnHub</span>
+            </a>
+            <button class="close-btn" aria-label="Close Navigation">&times;</button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="home.html" class="mobile-nav-link">Home</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="courses.html" class="mobile-nav-link">Courses</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+            <div class="nav-divider"></div>
+            <h4 class="categories-title">CATEGORIES</h4>
+            <a href="#" class="mobile-nav-link">Web Development</a>
+            <a href="#" class="mobile-nav-link">Data Science</a>
+            <a href="#" class="mobile-nav-link">Design</a>
+            <a href="#" class="mobile-nav-link">Mobile Development</a>
+            <a href="#" class="mobile-nav-link">Cloud Computing</a>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-background"></div>
+          <div class="hero-content">
+            <h1>Join 50,000+ Students</h1>
+            <p>Be part of a thriving community of learners worldwide</p>
+            <button class="btn btn-primary">
+              Start Learning
+              <img src="public/component1i201-5h7s.svg" alt="Arrow" class="btn-icon" />
+            </button>
+          </div>
+          <button class="slider-arrow prev">&lt;</button>
+          <button class="slider-arrow next">&gt;</button>
+          <div class="slider-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot active"></span>
+          </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon-background">
+                <img src="public/component12012-f0af.svg" alt="Students Icon" />
+              </div>
+              <p class="stat-number">50,000+</p>
+              <p class="stat-label">Active Students</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon-background">
+                <img src="public/component12012-x8b.svg" alt="Courses Icon" />
+              </div>
+              <p class="stat-number">200+</p>
+              <p class="stat-label">Courses Available</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon-background">
+                <img src="public/component12012-mio.svg" alt="Instructors Icon" />
+              </div>
+              <p class="stat-number">50+</p>
+              <p class="stat-label">Expert Instructors</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon-background">
+                <img src="public/component12012-53wj.svg" alt="Rating Icon" />
+              </div>
+              <p class="stat-number">4.8</p>
+              <p class="stat-label">Average Rating</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Featured Courses Section -->
+        <section class="courses-section">
+          <div class="section-header">
+            <h2>Featured Courses</h2>
+            <p>Discover our most popular courses taught by industry experts</p>
+          </div>
+          <div class="courses-grid">
+            <!-- Course 1 -->
+            <div class="course-card">
+              <div class="course-image-container">
+                <img src="public/tq_zkwdo5jj7w-1319-200h.png" alt="Web Development Course" class="course-image" />
+                <span class="course-price">$89.99</span>
+              </div>
+              <div class="course-content">
+                <div class="course-tags">
+                  <span class="tag tag-blue">Web Development</span>
+                  <span class="tag tag-gray">Beginner</span>
+                </div>
+                <h3 class="course-title">Complete Web Development Bootcamp</h3>
+                <p class="course-description">Master web development from scratch. Learn HTML, CSS, JavaScript, React, Node.js, and deploy full-stack applications.</p>
+                <div class="course-meta">
+                  <span>⭐ 4.8</span>
+                  <span>👥 12,450 students</span>
+                </div>
+              </div>
+            </div>
+             <div class="course-card">
+              <div class="course-image-container">
+                <img src="public/tq_9io_egnngl-cu8g-200h.png" alt="Python Course" class="course-image" />
+                <span class="course-price">$69.99</span>
+              </div>
+              <div class="course-content">
+                <div class="course-tags">
+                  <span class="tag tag-blue">Data Science</span>
+                  <span class="tag tag-gray">Beginner</span>
+                </div>
+                <h3 class="course-title">Python for Beginners</h3>
+                 <p class="course-description">Start your programming journey with Python. Perfect for absolute beginners with no coding experience.</p>
+                <div class="course-meta">
+                  <span>⭐ 4.7</span>
+                  <span>👥 11,567 students</span>
+                </div>
+              </div>
+            </div>
+             <div class="course-card">
+              <div class="course-image-container">
+                <img src="public/tq_zjxamh5bqi-adh-200h.png" alt="Data Science with Python Course" class="course-image" />
+                <span class="course-price">$99.99</span>
+              </div>
+              <div class="course-content">
+                <div class="course-tags">
+                  <span class="tag tag-blue">Data Science</span>
+                  <span class="tag tag-gray">Intermediate</span>
+                </div>
+                <h3 class="course-title">Data Science with Python</h3>
+                 <p class="course-description">Complete data science curriculum covering Python, pandas, NumPy, visualization, statistics, and machine learning.</p>
+                <div class="course-meta">
+                  <span>⭐ 4.8</span>
+                  <span>👥 11,234 students</span>
+                </div>
+              </div>
+            </div>
+             <div class="course-card">
+              <div class="course-image-container">
+                <img src="public/tq_9-lby9y4sl-thr-200h.png" alt="JavaScript Algorithms Course" class="course-image" />
+                <span class="course-price">$84.99</span>
+              </div>
+              <div class="course-content">
+                <div class="course-tags">
+                  <span class="tag tag-blue">Web Development</span>
+                  <span class="tag tag-gray">Intermediate</span>
+                </div>
+                <h3 class="course-title">JavaScript Algorithms & Data Structures</h3>
+                 <p class="course-description">Master coding interviews with comprehensive coverage of algorithms, data structures, and problem-solving techniques.</p>
+                <div class="course-meta">
+                  <span>⭐ 4.8</span>
+                  <span>👥 9,456 students</span>
+                </div>
+              </div>
+            </div>
+             <div class="course-card">
+              <div class="course-image-container">
+                <img src="public/tq_xfw6s3ytos-w1wg-200h.png" alt="Advanced React Course" class="course-image" />
+                <span class="course-price">$129.99</span>
+              </div>
+              <div class="course-content">
+                <div class="course-tags">
+                  <span class="tag tag-blue">Web Development</span>
+                  <span class="tag tag-gray">Advanced</span>
+                </div>
+                <h3 class="course-title">Advanced React & TypeScript</h3>
+                 <p class="course-description">Deep dive into React 18 features, TypeScript integration, performance optimization, and scalable application architecture.</p>
+                <div class="course-meta">
+                  <span>⭐ 4.9</span>
+                  <span>👥 8,932 students</span>
+                </div>
+              </div>
+            </div>
+             <div class="course-card">
+              <div class="course-image-container">
+                <img src="public/tq_me-zc9ds6i-9hw3-200h.png" alt="React Native Course" class="course-image" />
+                <span class="course-price">$109.99</span>
+              </div>
+              <div class="course-content">
+                <div class="course-tags">
+                  <span class="tag tag-blue">Mobile Development</span>
+                  <span class="tag tag-gray">Intermediate</span>
+                </div>
+                <h3 class="course-title">React Native Mobile Apps</h3>
+                 <p class="course-description">Create cross-platform mobile applications using React Native. One codebase for iOS and Android.</p>
+                <div class="course-meta">
+                  <span>⭐ 4.7</span>
+                  <span>👥 7,845 students</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="view-all-btn">
+            View All Courses
+            <img src="public/component1i201-z45j.svg" alt="Arrow" class="btn-icon" />
+          </a>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="section-header">
+                <h2 class="light-text">What Our Students Say</h2>
+                <p class="light-subtext">Join thousands of satisfied learners achieving their goals</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"The Web Development Bootcamp changed my life! I went from zero coding knowledge to landing my first developer job in just 4 months."</p>
+                    <div class="author">
+                        <img src="public/tq_ztyscb1-uv-aeu-200w.png" alt="Alex Thompson">
+                        <div>
+                            <p class="author-name">Alex Thompson</p>
+                            <p class="author-title">Verified Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Dr. Watson's Data Science course is incredibly comprehensive. The hands-on projects really helped me understand complex concepts."</p>
+                    <div class="author">
+                        <img src="public/tq_jl2-2iytkx-kfi-200w.png" alt="Maria Garcia">
+                        <div>
+                            <p class="author-name">Maria Garcia</p>
+                            <p class="author-title">Verified Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Michael's UX Design Masterclass gave me the skills and confidence to transition into product design. Highly recommended!"</p>
+                    <div class="author">
+                        <img src="public/tq_tudfflryye-ohmb-200w.png" alt="David Kim">
+                        <div>
+                            <p class="author-name">David Kim</p>
+                            <p class="author-title">Verified Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"The React Native course by James Park is outstanding. I built and launched my first mobile app within 3 months!"</p>
+                    <div class="author">
+                        <img src="public/tq_o-hlptqngd-3dsj-200w.png" alt="Sophie Miller">
+                        <div>
+                            <p class="author-name">Sophie Miller</p>
+                            <p class="author-title">Verified Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Lisa's AWS course prepared me perfectly for the Solutions Architect certification. Passed on my first try!"</p>
+                    <div class="author">
+                        <img src="public/tq_0-azux79v6-m12m-200w.png" alt="Ryan Patterson">
+                        <div>
+                            <p class="author-name">Ryan Patterson</p>
+                            <p class="author-title">Verified Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"The instructors are world-class and the community support is amazing. Best investment I've made in my career."</p>
+                    <div class="author">
+                        <img src="public/tq_w5j2nbuazr-0ik-200w.png" alt="Emma Wilson">
+                        <div>
+                            <p class="author-name">Emma Wilson</p>
+                            <p class="author-title">Verified Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+          <h2>Ready to Start Learning?</h2>
+          <p>Join our community of learners and take the first step toward achieving your goals.</p>
+          <div class="cta-buttons">
+            <button class="btn btn-primary">
+              Browse Courses
+              <img src="public/component1i201-mlk.svg" alt="Arrow" class="btn-icon" />
+            </button>
+            <button class="btn btn-secondary">Learn More About Us</button>
+          </div>
+        </section>
+      </main>
+
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <div class="logo-container">
+              <img src="public/component1i201-difi.svg" alt="LearnHub Logo" class="logo-icon" />
+              <span class="logo-text light-text">LearnHub</span>
+            </div>
+            <p>Empowering learners worldwide with high-quality, accessible online education. Learn at your own pace, from anywhere.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Browse Courses</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Data Science</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Mobile Development</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <ul>
+              <li>123 Education St, San Francisco, CA 94102</li>
+              <li>+1 (555) 555-1234</li>
+              <li>support@learnhub.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 LearnHub. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script src="data.js"></script>
+      <script src="script.js"></script>
+      
+    </div>
+  </body>
+</html>

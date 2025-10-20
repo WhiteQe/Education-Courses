@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - LearnHub</title>
+    <link rel="stylesheet" href="registration.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="signup-page">
+      <div class="signup-card">
+        <a href="login.html" class="back-link">
+          <img src="public/component1i455-m9x9.svg" alt="Back arrow" />
+          Back to sign in
+        </a>
+
+        <div class="signup-header">
+          <h1>Create your account</h1>
+        </div>
+
+        <form class="signup-form">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <div class="input-with-icon">
+              <img src="public/component14558-rgsw.svg" alt="Email Icon" />
+              <input type="email" id="email" name="email" placeholder="you@example.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-with-icon">
+              <img src="public/component14558-mym7.svg" alt="Password Icon" />
+              <input type="password" id="password" name="password" placeholder="Min. 8 characters" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <div class="input-with-icon">
+              <img src="public/component14558-c63.svg" alt="Password Icon" />
+              <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter password" />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>

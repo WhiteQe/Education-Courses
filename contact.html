@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - LearnHub</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-container">
+      <!-- Header -->
+      <header class="header">
+        <nav class="nav-container">
+            <a href="home.html" class="logo-container">
+                <img src="public/component1i201-difi.svg" alt="LearnHub Logo" class="logo-icon">
+                <span class="logo-text">LearnHub</span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="nav-links">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Desktop Authentication Links & Profile -->
+            <div class="nav-auth">
+                <!-- Show these when the user is logged out -->
+                <div class="logged-out-view">
+                    <a href="login.html" class="btn btn-secondary btn-small">Login</a>
+                    <a href="registration.html" class="btn btn-primary btn-small">Sign Up</a>
+                </div>
+                <!-- Show this when the user is logged in -->
+                <a href="profile.html" class="profile-icon-link logged-in-view">
+                    <img src="public/profile-icon.png" alt="Profile" class="profile-icon">
+                </a>
+            </div>
+
+            <!-- Burger Menu Button (for mobile) -->
+            <button class="burger-menu" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+     </header>
+
+     <!-- Mobile Navigation Panel (hidden by default) -->
+      <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <a href="home.html" class="logo-container">
+                <img src="public/component1i201-difi.svg" alt="LearnHub Logo" class="logo-icon">
+                <span class="logo-text">LearnHub</span>
+            </a>
+            <button class="close-btn" aria-label="Close Navigation">&times;</button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="home.html" class="mobile-nav-link">Home</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="courses.html" class="mobile-nav-link">Courses</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+            <div class="nav-divider"></div>
+            <h4 class="categories-title">CATEGORIES</h4>
+            <a href="#" class="mobile-nav-link">Web Development</a>
+            <a href="#" class="mobile-nav-link">Data Science</a>
+            <a href="#" class="mobile-nav-link">Design</a>
+            <a href="#" class="mobile-nav-link">Mobile Development</a>
+            <a href="#" class="mobile-nav-link">Cloud Computing</a>
+        </div>
+      </div>
+
+      <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-content">
+            <h1>Get In Touch</h1>
+            <p>Have questions? We're here to help. Reach out to us anytime.</p>
+          </div>
+        </section>
+
+        <!-- Contact Info Cards -->
+        <section class="contact-info-section">
+          <div class="contact-card email">
+            <div class="contact-icon-wrapper"><img src="public/component1i266-m57.svg" alt="Email Icon" /></div>
+            <h3>Email Us</h3>
+            <a href="mailto:support@learnhub.com">support@learnhub.com</a>
+          </div>
+          <div class="contact-card call">
+            <div class="contact-icon-wrapper"><img src="public/component1i266-004.svg" alt="Phone Icon" /></div>
+            <h3>Call Us</h3>
+            <a href="tel:+15555551234">+1 (555) 555-1234</a>
+          </div>
+          <div class="contact-card visit">
+            <div class="contact-icon-wrapper"><img src="public/component1i266-p4uk.svg" alt="Location Icon" /></div>
+            <h3>Visit Us</h3>
+            <p>123 Education St<br />San Francisco, CA 94102</p>
+          </div>
+        </section>
+
+        <!-- Form and FAQ Section -->
+        <section class="form-faq-section">
+          <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" name="subject" placeholder="How can we help?" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us more about your inquiry..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                <img src="public/component1i266-vphc.svg" alt="Send Icon" />
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-accordion">
+              <details>
+                <summary>How do I enroll in a course?</summary>
+                <p>You can enroll in any course by clicking the "Enroll Now" button on the course page and completing the checkout process.</p>
+              </details>
+              <details>
+                <summary>Can I get a refund if I'm not satisfied?</summary>
+                <p>Yes, we offer a 30-day money-back guarantee on all our courses. If you're not satisfied, you can request a full refund within 30 days of purchase.</p>
+              </details>
+              <details>
+                <summary>How long do I have access to course materials?</summary>
+                <p>You have lifetime access to all purchased course materials, including videos, articles, and downloadable resources.</p>
+              </details>
+              <details>
+                  <summary>Do I need prior experience to take these courses?</summary>
+                  <p>It depends on the course. Each course page lists the prerequisites. Many of our beginner courses require no prior experience at all.</p>
+              </details>
+              <details>
+                  <summary>Will I receive a certificate upon completion?</summary>
+                  <p>Yes, upon successful completion of a course, you will receive a verifiable certificate that you can share on your resume and social profiles.</p>
+              </details>
+              <details>
+                  <summary>Are the courses self-paced or scheduled?</summary>
+                  <p>All our courses are completely self-paced, so you can learn on your own schedule and revisit lessons whenever you like.</p>
+              </details>
+              <details>
+                  <summary>Can I interact with instructors and other students?</summary>
+                  <p>Yes, each course includes a Q&A section where you can ask questions to the instructor and interact with fellow students.</p>
+              </details>
+               <details>
+                  <summary>What payment methods do you accept?</summary>
+                  <p>We accept all major credit cards, as well as PayPal and other popular payment methods depending on your region.</p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+          <h2>Need Immediate Assistance?</h2>
+          <p>Our support team is available Monday through Friday, 9am-5pm PST</p>
+          <div class="cta-buttons">
+            <button class="btn btn-light"><img src="public/component1i266-ao6v.svg" alt="Phone Icon"/> Call Now</button>
+            <button class="btn btn-dark"><img src="public/component1i266-st5j.svg" alt="Email Icon"/> Email Support</button>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+       <footer class="footer">
+         <div class="footer-grid">
+          <div class="footer-about">
+            <div class="logo-container">
+              <img src="public/component1i266-5x3t.svg" alt="LearnHub Logo" class="logo-icon" />
+              <span class="logo-text light-text">LearnHub</span>
+            </div>
+            <p>
+              Empowering learners worldwide with high-quality, accessible online education. Learn at your own pace, from anywhere.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Browse Courses</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Data Science</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Mobile Development</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <ul>
+              <li>123 Education St, San Francisco, CA 94102</li>
+              <li>+1 (555) 555-1234</li>
+              <li>support@learnhub.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 LearnHub. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

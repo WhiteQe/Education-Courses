@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Our Courses - LearnHub</title>
+    <link rel="stylesheet" href="courses.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-container">
+      <!-- Header -->
+      <header class="header">
+        <nav class="nav-container">
+            <a href="home.html" class="logo-container">
+                <img src="public/component1i201-difi.svg" alt="LearnHub Logo" class="logo-icon">
+                <span class="logo-text">LearnHub</span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="nav-links">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Desktop Authentication Links & Profile -->
+            <div class="nav-auth">
+                <!-- Show these when the user is logged out -->
+                <div class="logged-out-view">
+                    <a href="login.html" class="btn btn-secondary btn-small">Login</a>
+                    <a href="registration.html" class="btn btn-primary btn-small">Sign Up</a>
+                </div>
+                <!-- Show this when the user is logged in -->
+                <a href="profile.html" class="profile-icon-link logged-in-view">
+                    <img src="public/profile-icon.png" alt="Profile" class="profile-icon">
+                </a>
+            </div>
+
+            <!-- Burger Menu Button (for mobile) -->
+            <button class="burger-menu" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+     </header>
+
+     <!-- Mobile Navigation Panel (hidden by default) -->
+      <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <a href="home.html" class="logo-container">
+                <img src="public/component1i201-difi.svg" alt="LearnHub Logo" class="logo-icon">
+                <span class="logo-text">LearnHub</span>
+            </a>
+            <button class="close-btn" aria-label="Close Navigation">&times;</button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="home.html" class="mobile-nav-link">Home</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="courses.html" class="mobile-nav-link">Courses</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+            <div class="nav-divider"></div>
+            <h4 class="categories-title">CATEGORIES</h4>
+            <a href="#" class="mobile-nav-link">Web Development</a>
+            <a href="#" class="mobile-nav-link">Data Science</a>
+            <a href="#" class="mobile-nav-link">Design</a>
+            <a href="#" class="mobile-nav-link">Mobile Development</a>
+            <a href="#" class="mobile-nav-link">Cloud Computing</a>
+        </div>
+      </div>
+
+      <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-content">
+            <h1>Explore Our Courses</h1>
+            <p>12 courses available to help you achieve your goals</p>
+          </div>
+        </section>
+
+        <!-- Main Content Area -->
+        <div class="content-area">
+          <!-- Filters Sidebar -->
+          <aside class="filters-sidebar">
+            <div class="filter-group">
+              <h3>Filters</h3>
+            </div>
+            <div class="filter-group">
+              <h4>Category</h4>
+              <div class="filter-options">
+                <label><input type="radio" name="category" value="All" checked /> All Categories</label>
+                <label><input type="radio" name="category" value="Web Development" /> Web Development</label>
+                <label><input type="radio" name="category" value="Data Science" /> Data Science</label>
+                <label><input type="radio" name="category" value="Design" /> Design</label>
+                <label><input type="radio" name="category" value="Mobile Development" /> Mobile Development</label>
+                <label><input type="radio" name="category" value="Cloud Computing" /> Cloud Computing</label>
+              </div>
+            </div>
+            <div class="filter-group">
+              <h4>Difficulty Level</h4>
+              <div class="filter-options">
+                <label><input type="radio" name="difficulty" value="All" checked /> All Levels</label>
+                <label><input type="radio" name="difficulty" value="Beginner" /> Beginner</label>
+                <label><input type="radio" name="difficulty" value="Intermediate" /> Intermediate</label>
+                <label><input type="radio" name="difficulty" value="Advanced" /> Advanced</label>
+              </div>
+            </div>
+            <div class="filter-group">
+              <h4>Price Range</h4>
+              <div class="filter-options">
+                <label><input type="radio" name="price" value="All" checked /> All Prices</label>
+                <label><input type="radio" name="price" value="under-75" /> Under $75</label>
+                <label><input type="radio" name="price" value="75-100" /> $75 - $100</label>
+                <label><input type="radio" name="price" value="100-150" /> $100 - $150</label>
+                <label><input type="radio" name="price" value="over-150" /> Over $150</label>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Courses Grid -->
+          <div class="courses-main">
+            <div class="sort-bar">
+              <label for="sort-by">Sort by:</label>
+              <select id="sort-by" name="sort-by">
+                <option value="popular">Most Popular</option>
+                <option value="newest">Newest</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+              </select>
+            </div>
+            <!-- Course Cards will be dynamically inserted here by script.js -->
+            <div class="courses-grid"></div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+         <div class="footer-grid">
+          <div class="footer-about">
+            <div class="logo-container">
+              <img src="public/component1i254-luu.svg" alt="LearnHub Logo" class="logo-icon" />
+              <span class="logo-text light-text">LearnHub</span>
+            </div>
+            <p>
+              Empowering learners worldwide with high-quality, accessible online education. Learn at your own pace, from anywhere.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Browse Courses</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Data Science</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Mobile Development</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <ul>
+              <li>123 Education St, San Francisco, CA 94102</li>
+              <li>+1 (555) 555-1234</li>
+              <li>support@learnhub.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 LearnHub. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script src="data.js"></script>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

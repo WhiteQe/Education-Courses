@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Profile — LearnHub</title>
+  <link rel="stylesheet" href="profile.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+        <nav class="nav-container">
+            <a href="home.html" class="logo-container">
+                <img src="public/component1i201-difi.svg" alt="LearnHub Logo" class="logo-icon">
+                <span class="logo-text">LearnHub</span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="nav-links">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Burger Menu Button (for mobile) -->
+            <button class="burger-menu" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+     </header>
+
+  <!-- Page -->
+  <main class="page" role="main">
+    <!-- Profile header -->
+    <section class="profile-header" aria-labelledby="profile-heading">
+      <div class="avatar" aria-hidden="true">AS</div>
+      <div class="profile-meta">
+        <h1 id="profile-heading">Alex Smith</h1>
+        <div class="sub">Full-stack developer student • Member since Oct 2024</div>
+        <div class="profile-stats" aria-hidden="false">
+          <div class="stat"><i class="fa-solid fa-graduation-cap"></i> 2 active courses</div>
+          <div class="stat"><i class="fa-solid fa-star"></i> 4.8 rating</div>
+          <div class="stat"><i class="fa-solid fa-clock"></i> 120 hrs studied</div>
+        </div>
+      </div>
+      <div class="profile-actions">
+        <button class="btn ghost" title="Message"><i class="fa-regular fa-comment"></i> Message</button>
+        <button class="btn primary" title="Edit profile"><i class="fa-solid fa-pen-to-square"></i> Edit profile</button>
+        <button id="logout-btn" class="btn ghost" title="Logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+      </div>
+    </section>
+
+    <!-- Two-column layout -->
+    <div class="columns">
+      <!-- Left column -->
+      <div>
+        <!-- Course card -->
+        <div class="card" aria-labelledby="course-heading">
+          <div class="course-title">
+            <div>
+              <h2 id="course-heading">Python Foundations</h2>
+              <div style="color:var(--muted);font-size:13px;margin-top:6px">Instructor: Dr. Watson • Beginner • 12 chapters</div>
+            </div>
+            <div class="course-progress" aria-hidden="true">
+              <div style="text-align:right">
+                <div style="font-weight:800;font-size:15px">72%</div>
+                <div style="font-size:12px;color:var(--muted)">Completed</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Module list -->
+          <div class="modules" role="list">
+            <article class="module completed" role="listitem" aria-label="Module 1 completed">
+              <div class="left"><i class="fa-solid fa-check"></i></div>
+              <div class="body">
+                <h3>1. Python Basics</h3>
+                <p>Variables, data types, control flow and simple functions.</p>
+                <div class="meta">
+                  <span><i class="fa-regular fa-clock"></i>&nbsp; 3 lessons</span>
+                  <span><i class="fa-solid fa-circle-notch" style="transform:rotate(-90deg)"></i>&nbsp; Completed</span>
+                </div>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:10px">
+                <div class="progress-row" style="width:180px">
+                  <div class="progress" aria-hidden="true"><b style="width:100%"></b></div>
+                </div>
+                <button class="action-btn ghost" aria-label="Review module">Review</button>
+              </div>
+            </article>
+
+            <article class="module completed" role="listitem" aria-label="Module 2 completed">
+              <div class="left"><i class="fa-solid fa-check"></i></div>
+              <div class="body">
+                <h3>2. Data Structures</h3>
+                <p>Lists, tuples, dictionaries, sets and their common use-cases.</p>
+                <div class="meta">
+                  <span><i class="fa-regular fa-clock"></i>&nbsp; 4 lessons</span>
+                  <span>•</span>
+                  <span style="color:var(--muted)">Completed</span>
+                </div>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:10px">
+                <div class="progress-row" style="width:180px">
+                  <div class="progress"><b style="width:100%"></b></div>
+                </div>
+                <button class="action-btn ghost">Review</button>
+              </div>
+            </article>
+
+            <article class="module" role="listitem" aria-label="Module 3 in progress">
+              <div class="left" style="color:#fff;background:linear-gradient(135deg,#f59e0b,#f97316)"><i class="fa-solid fa-code"></i></div>
+              <div class="body">
+                <h3>3. Functions & Modules</h3>
+                <p>Writing reusable code, modules, and basic package management.</p>
+                <div class="meta">
+                  <span><i class="fa-regular fa-clock"></i>&nbsp; 5 lessons</span>
+                  <span>•</span>
+                  <span style="color:var(--muted)">In progress</span>
+                </div>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:10px;width:220px">
+                <div class="progress-row" style="width:100%">
+                  <div class="progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40"><b style="width:40%"></b></div>
+                </div>
+                <button class="action-btn primary">Continue</button>
+              </div>
+            </article>
+
+            <article class="module locked" role="listitem" aria-label="Module 4 locked">
+              <div class="left" style="color:var(--muted);background:#fff"><i class="fa-solid fa-lock"></i></div>
+              <div class="body">
+                <h3>4. Object-Oriented Programming</h3>
+                <p>Classes, inheritance, and design patterns for Python apps.</p>
+                <div class="meta"><span><i class="fa-regular fa-clock"></i>&nbsp; 6 lessons</span><span>•</span><span style="color:var(--muted)">Locked</span></div>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:10px;width:220px">
+                <div class="progress-row" style="width:100%">
+                  <div class="progress"><b style="width:0%"></b></div>
+                </div>
+                <button class="action-btn ghost" disabled style="opacity:0.6;cursor:not-allowed">Locked</button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Notes / Activity card -->
+        <div class="card" style="margin-top:16px">
+          <h3 style="margin:0 0 8px 0">Recent Activity</h3>
+          <div style="color:var(--muted);font-size:14px">
+            <div style="display:flex;justify-content:space-between;padding:10px 0;border-top:1px dashed rgba(15,23,42,0.04)">
+              <div>Completed: Python Basics</div>
+              <div style="color:var(--muted);font-weight:700">2 days ago</div>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:10px 0;border-top:1px dashed rgba(15,23,42,0.04)">
+              <div>Started: Functions & Modules</div>
+              <div style="color:var(--muted);font-weight:700">5 days ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <aside class="summary">
+        <div class="card">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <div>
+              <div style="color:var(--muted);font-size:13px">Overall Progress</div>
+              <div style="font-weight:800;font-size:18px">72% Complete</div>
+            </div>
+            <div class="badge">Level 4</div>
+          </div>
+          <div style="text-align:center;margin-top:12px">
+            <div class="progress-circular" role="img" aria-label="72 percent complete">
+              <div class="val">72%</div>
+            </div>
+            <div style="color:var(--muted);font-size:13px">Keep going — next milestone at 80%</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+            <strong>Achievements</strong>
+            <div style="color:var(--muted);font-size:13px">3 earned</div>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <div style="background:#eef2ff;padding:8px 10px;border-radius:8px;font-weight:700;color:var(--accent)">Python Novice</div>
+            <div style="background:#effaf5;padding:8px 10px;border-radius:8px;font-weight:700;color:var(--success)">Course Complete</div>
+            <div style="background:#fff7ed;padding:8px 10px;border-radius:8px;font-weight:700;color:#d97706">Top 10%</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+            <strong>Account</strong>
+            <div style="color:var(--muted);font-size:13px">Active</div>
+          </div>
+          <div style="color:var(--muted);font-size:14px">Member since Oct 2024</div>
+          <div style="margin-top:10px"><button class="btn ghost" style="width:100%">Manage subscription</button></div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer aria-label="Site footer">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand">LearnHub</div>
+          <div style="margin-top:8px;color:#9aa3c7;font-size:13px">Interactive coding courses and hands-on projects.</div>
+        </div>
+        <div class="footer-col">
+          <strong>Courses</strong>
+          <div style="margin-top:8px;color:var(--muted);font-size:13px">Python • Web • Data • Mobile</div>
+        </div>
+        <div class="footer-col">
+          <strong>Company</strong>
+          <div style="margin-top:8px;color:var(--muted);font-size:13px">About • Blog • Careers</div>
+        </div>
+        <div class="footer-col">
+          <strong>Support</strong>
+          <div style="margin-top:8px;color:var(--muted);font-size:13px">Help Center • Contact</div>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
